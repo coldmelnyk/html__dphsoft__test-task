@@ -17,6 +17,44 @@ ul {
   list-style: none;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.link-title,
+.link-desc {
+  transition: all 1s ease-out;
+}
+
+.link-img {
+  transition-duration: 0.5s;
+}
+
+.link-img:hover {
+  transform: scale(1.02);
+}
+
+.link-title::after,
+.link-desc::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: rgb(163, 163, 163);
+  transition: 0.7s ease-in-out;
+}
+
+.link-title::after {
+  background: black;
+}
+
+.link-title:hover::after,
+.link-desc:hover::after {
+  width: 100%;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -100,6 +138,9 @@ ul {
 .product-card__section__desc {
   font-size: 14px;
   color: #666;
+
+  max-height: 2rem;
+  overflow: hidden;
 }
 
 .product-card__section__info__utils {
@@ -142,6 +183,8 @@ ul {
   background: no-repeat center url(../public/images/star.svg);
   height: 16px;
   width: 16px;
+
+  cursor: pointer;
 }
 
 .stars--0 :nth-child(-n + 0) {
