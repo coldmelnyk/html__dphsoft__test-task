@@ -3,14 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Card</title>
   </head>
   <body class="body">
     <main class="main">
       <article class="product-card">
-        <p>Card</p>
+        <section class="product-card__section">
+          <img class="product-card__section__img" src="" alt="" />
+        </section>
+
+        <section class="product-card__section">
+          <div>
+            <div class="product-card__section__stars">
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+            </div>
+
+            <h1 class="product-card__section__title"></h1>
+            <p class="product-card__section__desc"></p>
+          </div>
+
+          <div>
+            <div class="product-card__section__prices">
+              <p class="product-card__section__prices__new"></p>
+              <p class="product-card__section__prices__old"></p>
+            </div>
+            <div class="product-card__section__availibility"></div>
+          </div>
+        </section>
+
+        <section class="product-card__section">
+          <button class="product-card__section__fav-btn">
+            <img class="btn-img" src="" alt="fav-btn-icon" />
+            <p class="btn-text"></p>
+          </button>
+
+          <button class="product-card__section__buy-btn">
+            <img class="btn-img" src="" alt="buy-btn-icon" />
+            <p class="btn-text"></p>
+          </button>
+        </section>
       </article>
     </main>
   </body>
