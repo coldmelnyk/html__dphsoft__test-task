@@ -10,42 +10,69 @@
   <body class="body">
     <main class="main">
       <article class="product-card">
-        <section class="product-card__section">
-          <img class="product-card__section__img" src="" alt="" />
+        <section class="product-card__section__image">
+          <img
+            class="product-card__section__img"
+            src="./public/images/imac.jpeg"
+            alt=""
+          />
         </section>
 
-        <section class="product-card__section">
-          <div>
+        <section class="product-card__section__info">
+          <div class="product-card__section__info__text">
             <div class="product-card__section__stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
+              <ul class="stars stars--4">
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+              </ul>
             </div>
 
-            <h1 class="product-card__section__title"></h1>
-            <p class="product-card__section__desc"></p>
+            <h1 class="product-card__section__title">
+              APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
+            </h1>
+
+            <p class="product-card__section__desc">
+              A desktop computer that immerses you in content. Literally. This
+              idea is at the heart of the modern iMac - and today it is more
+              relevant than ever. A completely new processor, innovative
+              graphics technologies, advanced storage and connectors with
+              amazing bandwidth - all this is the new iMac. And its Retina
+              display can liven up any picture, because in terms of brightness
+              and color quality, it has no equal among the iMac. Working on iMac
+              is now even more interesting and interesting.
+            </p>
           </div>
 
-          <div>
+          <div class="product-card__section__info__utils">
             <div class="product-card__section__prices">
-              <p class="product-card__section__prices__new"></p>
-              <p class="product-card__section__prices__old"></p>
+              <p class="product-card__section__prices__new">$2,199</p>
+              <p class="product-card__section__prices__old">$2,599</p>
             </div>
-            <div class="product-card__section__availibility"></div>
+
+            <div class="product-card__section__availibility">
+              <img
+                class="icon product-card__section__availibility__img"
+                src=""
+                alt=""
+              />
+
+              <p class="product-card__section__availibility__text">In stock</p>
+            </div>
           </div>
         </section>
 
-        <section class="product-card__section">
-          <button class="product-card__section__fav-btn">
-            <img class="btn-img" src="" alt="fav-btn-icon" />
-            <p class="btn-text"></p>
+        <section class="product-card__section__buttons">
+          <button class="product-card__section__fav-btn btn">
+            <img class="icon btn-img" src="" alt="fav-btn-icon" />
+            <p class="btn-text">Add to favourites</p>
           </button>
 
-          <button class="product-card__section__buy-btn">
-            <img class="btn-img" src="" alt="buy-btn-icon" />
-            <p class="btn-text"></p>
+          <button class="product-card__section__buy-btn btn">
+            <img class="icon btn-img" src="" alt="buy-btn-icon" />
+            <p class="btn-text">Buy Now</p>
           </button>
         </section>
       </article>

@@ -13,6 +13,143 @@ li {
   padding: 0;
 }
 
-.body {
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid black;
+  background: none;
+
+  cursor: pointer;
+}
+
+.body,
+.main {
   margin: 0;
+  min-height: 100dvh;
+}
+
+.body {
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  border-radius: 27px;
+  padding: 30px;
+  box-shadow: 0 0 10px gray;
+}
+
+.product-card__section__img {
+  aspect-ratio: 4/3;
+  max-width: 300px;
+}
+
+.product-card__section__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-card__section__info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-card__section__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-card__section__desc {
+  font-size: 14px;
+  color: #666;
+}
+
+.product-card__section__info__utils {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-card__section__prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card__section__prices__new {
+  font-size: 18px;
+  font-weight: bold;
+
+  color: #2e8b57;
+}
+
+.product-card__section__prices__old {
+  font-size: 14px;
+  text-decoration: line-through;
+
+  color: #999;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.star {
+  background: no-repeat center url(../public/images/star.svg);
+  height: 16px;
+  width: 16px;
+}
+
+.stars--0 :nth-child(-n + 0) {
+  background: no-repeat center url(../public/images/star-active.svg);
+}
+
+.stars--1 :nth-child(-n + 1) {
+  background: no-repeat center url(../public/images/star-active.svg);
+}
+
+.stars--2 :nth-child(-n + 2) {
+  background: no-repeat center url(../public/images/star-active.svg);
+}
+
+.stars--3 :nth-child(-n + 3) {
+  background: no-repeat center url(../public/images/star-active.svg);
+}
+
+.stars--4 :nth-child(-n + 4) {
+  background: no-repeat center url(../public/images/star-active.svg);
+}
+
+.stars--5 :nth-child(-n + 5) {
+  background: no-repeat center url(../public/images/star-active.svg);
+}
+
+.product-card__section__buttons {
+  min-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
