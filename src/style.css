@@ -19,10 +19,14 @@ ul {
 
 .btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
 
-  border: 1px solid black;
+  padding: 10px;
+
+  border: 1px solid gray;
+  border-radius: 20px;
   background: none;
 
   cursor: pointer;
@@ -89,7 +93,13 @@ ul {
 .product-card__section__info__utils {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 3px;
+}
+
+.product-card__section__availibility {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-card__section__prices {
@@ -152,4 +162,19 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.icon {
+  height: 15px;
+  width: 15px;
+}
+
+.icon-exist {
+  background: no-repeat center url(../public/images/check-mark-icon.svg);
+  background-size: contain;
+}
+
+.icon-notExist {
+background: no-repeat center url(../public/images/cancel-icon.svg);
+background-size: contain;
 }

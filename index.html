@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Card</title>
@@ -13,7 +13,7 @@
         <section class="product-card__section__image">
           <img
             class="product-card__section__img"
-            src="./public/images/imac.jpeg"
+            src="/images/imac.jpeg"
             alt=""
           />
         </section>
@@ -53,11 +53,9 @@
             </div>
 
             <div class="product-card__section__availibility">
-              <img
-                class="icon product-card__section__availibility__img"
-                src=""
-                alt=""
-              />
+              <div
+                class="icon icon-exist product-card__section__availibility__img"
+              ></div>
 
               <p class="product-card__section__availibility__text">In stock</p>
             </div>
@@ -66,12 +64,12 @@
 
         <section class="product-card__section__buttons">
           <button class="product-card__section__fav-btn btn">
-            <img class="icon btn-img" src="" alt="fav-btn-icon" />
+            <img class="icon btn-img" src="/images/like-icon.svg" alt="fav-btn-icon" />
             <p class="btn-text">Add to favourites</p>
           </button>
 
           <button class="product-card__section__buy-btn btn">
-            <img class="icon btn-img" src="" alt="buy-btn-icon" />
+            <img class="icon btn-img" src="/images/cart-icon.svg" alt="buy-btn-icon" />
             <p class="btn-text">Buy Now</p>
           </button>
         </section>
