@@ -72,7 +72,7 @@ ul {
 }
 
 .product-card:hover {
-    box-shadow: 0 0 10px rgb(112, 112, 112);
+  box-shadow: 0 0 10px rgb(112, 112, 112);
 }
 
 .product-card__section__img {
